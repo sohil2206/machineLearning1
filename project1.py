@@ -58,7 +58,7 @@ def hinge_loss_full(feature_matrix, labels, theta, theta_0):
     given dataset and parameters. This number should be the average hinge
     loss across all of the points in the feature matrix.
     """
-    # Your code here
+ 
     h_loss = 1 - labels*(np.dot(theta,feature_matrix.T)+theta_0)
     h_loss[h_loss<0]=0
     return h_loss.mean()
@@ -122,7 +122,7 @@ def perceptron(feature_matrix, labels, T):
     theta_0, the offset classification parameter, after T iterations through
     the feature matrix.
     """
-    # Your code here
+ 
     current_theta = np.zeros(feature_matrix.shape[1])
     current_theta_0 = 0
 
